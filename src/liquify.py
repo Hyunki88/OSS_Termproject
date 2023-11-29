@@ -84,5 +84,6 @@ if __name__ == '__main__' :
         if key & 0xFF == 27:
             break
     save_image.save_image(img)
+    cv2.waitKey()
     cv2.destroyAllWindows()
            
