@@ -33,12 +33,11 @@ mapy = ((mapy + 1)*rows-1)/2
 # 재매핑 변환
 distorted = cv2.remap(img,mapx,mapy,cv2.INTER_LINEAR)
 
-img = cv2.resize(img, (580, 400))
-distorted = cv2.resize(distorted, (580, 400))
+
 
 merge_image = cv2.hconcat([img, distorted])
 cv2.imshow('lens', merge_image)
 
 cv2.waitKey()
-save_image.save_image(img)
+save_image.save_image(distorted)
 cv2.destroyAllWindows()

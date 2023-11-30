@@ -24,12 +24,11 @@ img_cosy=cv2.remap(img, mapx, cosy, cv2.INTER_LINEAR) # y축만 cos 곡선 적�
 img_both=cv2.remap(img, sinx, cosy, cv2.INTER_LINEAR, \
                     None, cv2.BORDER_REPLICATE)
 # 결과 출력
-img = cv2.resize(img, (580, 400))
-img_both = cv2.resize(img_both, (580, 400))
+
 
 merge_image = cv2.hconcat([img, img_both])
 cv2.imshow('wave', merge_image)
 
 cv2.waitKey()
-save_image.save_image(img)
+save_image.save_image(img_both)
 cv2.destroyAllWindows()
