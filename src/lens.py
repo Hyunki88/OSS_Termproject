@@ -3,7 +3,12 @@ import image_processor
 import numpy as np
 import save_image
 
+win_title = 'lens'
 img = image_processor.read_selected_image()    # 이미지 읽기
+cv2.namedWindow(win_title, cv2.WINDOW_NORMAL)
+new_width = img.shape[1] 
+new_height = img.shape[0] // 2
+cv2.resizeWindow(win_title, new_width, new_height)
 print(img.shape)
 rows, cols = img.shape[:2]
 
@@ -36,7 +41,7 @@ distorted = cv2.remap(img,mapx,mapy,cv2.INTER_LINEAR)
 
 
 merge_image = cv2.hconcat([img, distorted])
-cv2.imshow('lens', merge_image)
+cv2.imshow(win_title, merge_image)
 
 cv2.waitKey()
 save_image.save_image(distorted)
