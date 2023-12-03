@@ -5,7 +5,10 @@ import save_image
 rate = 15               # 모자이크에 사용할 축소 비율 (1/rate)
 win_title = 'mosaic'    # 창 제목
 img = image_processor.read_selected_image()    # 이미지 읽기
-
+cv2.namedWindow(win_title, cv2.WINDOW_GUI_EXPANDED)
+new_width = img.shape[1] // 2
+new_height = img.shape[0] // 2
+cv2.resizeWindow(win_title, new_width, new_height)
 while True:
     x,y,w,h = cv2.selectROI(win_title, img, False) # 관심영역 선택
     if w and h:
@@ -18,6 +21,6 @@ while True:
     else:
         break
 
-save_image.save_image(img)
 cv2.waitKey()
+save_image.save_image(img)
 cv2.destroyAllWindows()
