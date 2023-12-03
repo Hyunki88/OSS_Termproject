@@ -5,8 +5,13 @@ import save_image
 
 l = 20      # 파장(wave length)
 amp = 15    # 진폭(amplitude)
+win_title = 'wave'
 
 img = image_processor.read_selected_image()    # 이미지 읽기
+cv2.namedWindow(win_title, cv2.WINDOW_NORMAL)
+new_width = img.shape[1] 
+new_height = img.shape[0] // 2
+cv2.resizeWindow(win_title, new_width, new_height)
 rows, cols = img.shape[:2]
 
 # 초기 매핑 배열 생성 ---①
@@ -27,7 +32,7 @@ img_both=cv2.remap(img, sinx, cosy, cv2.INTER_LINEAR, \
 
 
 merge_image = cv2.hconcat([img, img_both])
-cv2.imshow('wave', merge_image)
+cv2.imshow(win_title, merge_image)
 
 cv2.waitKey()
 save_image.save_image(img_both)
