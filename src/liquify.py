@@ -76,14 +76,17 @@ if __name__ == '__main__' :
     img = image_processor.read_selected_image()
     h, w = img.shape[:2]
 
-    cv2.namedWindow(win_title)
+    cv2.namedWindow(win_title, cv2.WINDOW_NORMAL)
+    new_width = img.shape[1] // 2
+    new_height = img.shape[0] // 2
+    cv2.resizeWindow(win_title, new_width, new_height)
     cv2.setMouseCallback(win_title, onMouse) 
     cv2.imshow(win_title, img)
     while True:
         key = cv2.waitKey(1)
         if key & 0xFF == 27:
             break
-    save_image.save_image(img)
     cv2.waitKey()
+    save_image.save_image(img)
     cv2.destroyAllWindows()
            
