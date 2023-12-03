@@ -21,6 +21,6 @@ while True:
     else:
         break
 
-save_image.save_image(img)
 cv2.waitKey()
+save_image.save_image(img)
 cv2.destroyAllWindows()
