@@ -6,6 +6,7 @@ Repository의README.md
 -사용한패키지와그version(install이필요할경우안내)  
 -실행방법  
 -참고자료(참고한자료,영상,블로그,소스코드등이있을경우반드시표기)
+
 ## Make a Simple Mosaic of Objects with OpenCV
 ### Architecture
 0. Inspired by Instagram story filter
@@ -15,9 +16,26 @@ Repository의README.md
 4. Liquify: Apply the effect by dragging with the mouse; press Esc to save and exit.
 5. Pressing Esc saves and exits.
 
+
+### Keypoints
+
+### Results
+데모 첨부 예정 
+
+
+
+
+
+
 ### limitation
 1. Improving the window design that appears when the program is executed.
 2. Adding additional types of filters.
 3. Implementing a feature to control the intensity of filters (e.g., determining the degree of blurring for a mosaic filter).
 4. Enhancing user convenience with features like back and forward navigation.
 5. Addressing the issue where the program does not function properly when the image file name contains Korean characters.
+
+### Reference
+https://prlabhotelshoe.tistory.com/16
+https://bkshin.tistory.com/entry/OpenCV-16-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%EC%B2%98%EB%A6%ACMosaic-%EB%A6%AC%ED%80%B4%ED%8C%8C%EC%9D%B4Liquify-%EC%99%9C%EA%B3%A1-%EA%B1%B0%EC%9A%B8Distortion-Mirror
+https://honeycoding.tistory.com/19
+https://yunwoong.tistory.com/50
