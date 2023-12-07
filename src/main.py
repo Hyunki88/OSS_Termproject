@@ -13,6 +13,9 @@ def run_filter3():
 def run_filter4():
     subprocess.run(["python", "wave.py"])
 
+def run_filter5():
+    subprocess.run(["python","Edge.py"])
+
 def on_closing():
     root.destroy()
 
@@ -35,4 +38,6 @@ filter3_button.pack()
 filter4_button = tk.Button(root, text="물결필터", command=run_filter4)
 filter4_button.pack()
 
+filter5_button = tk.Button(root, text="선 필터", command=run_filter5)
+filter5_button.pack()
 root.mainloop()
