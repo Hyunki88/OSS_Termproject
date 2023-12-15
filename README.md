@@ -1,6 +1,7 @@
 # OSS_Termproject
 
 ## Make a Simple Mosaic of Objects with OpenCV
+
 ### Architecture
 0. Inspired by Instagram story filter
 1. A program that adjusts photos through mouse clicks and saves the results.
@@ -13,37 +14,45 @@
 ```sh
 pip install opencv-python
 ```
+
 ### Run
 ```sh
 python main.py
 ```
+
 ![Main](/images/main.png)
+
 ### Keypoints
 Simple image editing
+
 Free
+
 Careful image modification
+
 ### Results
 Source image (원본 이미지)
+
 ![MonaLisa](/images/monalisa.jpg)
 
 Mosaic (모자이크)
+
 ![Mosaic](/images/mosaic.png)
 
 Liquify (리퀴파이)
+
 ![Liquify](/images/liquify.png)
 
 Lens (볼록 렌즈)
+
 ![Lens](/images/lens.png)
 
 Wave (물결)
+
 ![Wave](/images/wave.png)
 
 Edge (선)
+
 ![Edge](/images/edge.png)
-
-
-
-
 
 ### limitation
 1. Improving the window design that appears when the program is executed.
