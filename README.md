@@ -1,12 +1,5 @@
 # OSS_Termproject
 
-Repository의README.md  
--프로젝트개요  
--데모나예시를보여주는이미지/영상  
--사용한패키지와그version(install이필요할경우안내)  
--실행방법  
--참고자료(참고한자료,영상,블로그,소스코드등이있을경우반드시표기)
-
 ## Make a Simple Mosaic of Objects with OpenCV
 ### Architecture
 0. Inspired by Instagram story filter
@@ -16,12 +9,37 @@ Repository의README.md
 4. Liquify: Apply the effect by dragging with the mouse; press Esc to save and exit.
 5. Pressing Esc saves and exits.
 
-
+### Packages
+```sh
+pip install opencv-python
+```
+### Run
+```sh
+python main.py
+```
+![Main](/images/main.png)
 ### Keypoints
-
+Simple image editing
+Free
+Careful image modification
 ### Results
-데모 첨부 예정 
+Source image (원본 이미지)
+![MonaLisa](/images/monalisa.jpg)
 
+Mosaic (모자이크)
+![Mosaic](/images/mosaic.png)
+
+Liquify (리퀴파이)
+![Liquify](/images/liquify.png)
+
+Lens (볼록 렌즈)
+![Lens](/images/lens.png)
+
+Wave (물결)
+![Wave](/images/wave.png)
+
+Edge (선)
+![Edge](/images/edge.png)
 
 
 
@@ -36,6 +54,9 @@ Repository의README.md
 
 ### Reference
 https://prlabhotelshoe.tistory.com/16
-https://bkshin.tistory.com/entry/OpenCV-16-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%EC%B2%98%EB%A6%ACMosaic-%EB%A6%AC%ED%80%B4%ED%8C%8C%EC%9D%B4Liquify-%EC%99%9C%EA%B3%A1-%EA%B1%B0%EC%9A%B8Distortion-Mirror
+
+https://github.com/BaekKyunShin/OpenCV_Project_Python/tree/master/05.geometric_transform
+
 https://honeycoding.tistory.com/19
+
 https://yunwoong.tistory.com/50
